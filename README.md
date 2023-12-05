@@ -27,3 +27,8 @@ This repository comprises my studies regarding the integration of a Python proje
 - Handling exceptions when making batch calls to an API using try and except code blocks to capture and handle different types of errors.
 - Implementing a retry logic, where we attempt the call again after a short interval in case of an error, to address temporary issues.
 - Managing rate limits in the use of the GPT API, which are defined by the number of requests per day (RPD), requests per minute (RPM), and the number of tokens per minute (TPM).
+
+**Step 5:** Product Recommendation Email Challenge
+
+- Transform the result of the GPT call into a structured JSON object, allowing iteration for each client and the execution of product recommendation and email writing operations based on the identified profiles.
+- Load a list of products from a text file, create a function to recommend products based on customer purchase profiles, and format the output of recommendations in a readable manner.
