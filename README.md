@@ -19,3 +19,11 @@ This repository comprises my studies regarding the integration of a Python proje
 - Selecting the appropriate language model for our tasks, taking into account token limits, context, and cost, and choosing based on the specific needs of the project.
 - Utilizing the TikToken library to count and estimate the number of tokens in a text to assess the usage of language models, understand the internal structure of tokens, and calculate processing costs.
 - Dynamically choosing language models based on the number of input tokens and calculating the expected size of the output to ensure proper functioning of text generation.
+
+**Step 4:** Batch and error handler
+
+- Using language models to perform sentiment analysis on product reviews, summarizing the evaluations, determining the overall sentiment (positive, neutral, or negative), identifying strengths and weaknesses, and saving the results in files.
+- Refactoring the code to process sentiment analyses in batches, utilizing a function to perform the analysis for each product in the list, and adding prints to track progress and identify potential errors during batch analysis.
+- Handling exceptions when making batch calls to an API using try and except code blocks to capture and handle different types of errors.
+- Implementing a retry logic, where we attempt the call again after a short interval in case of an error, to address temporary issues.
+- Managing rate limits in the use of the GPT API, which are defined by the number of requests per day (RPD), requests per minute (RPM), and the number of tokens per minute (TPM).
